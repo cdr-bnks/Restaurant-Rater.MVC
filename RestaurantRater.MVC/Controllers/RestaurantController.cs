@@ -39,7 +39,7 @@ namespace RestaurantRater.MVC.Controllers
             }
         }
 
-        //GET:Restaurant/Delete/{id}
+        //GET: Restaurant/Delete/{id}
         public ActionResult Delete(int? id)
         {
             if (id == null)
