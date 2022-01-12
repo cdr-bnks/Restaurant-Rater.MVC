@@ -1,7 +1,26 @@
-﻿
+﻿@model IEnumerable<RestaurantRater.MVC.Models.Restaurant>
+
+
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Restaurants";
 }
 
 <h2>List of Restaurants</h2>
 
+<p>
+    @Html.ActionLink("Rate a Restaurant", "Create")
+</p>
+
+<table class="table"">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Address)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Rating)
+        </th>
+    </tr>
+</table>
